@@ -15,13 +15,13 @@ export const UserContext = createContext();
 function App() {
   const date = new Date().getFullYear();
   const [userData, setUserData] = useState();
-const [userLoggedIn, setUserLoggedIn] = useState(false)
+  const [userLoggedIn, setUserLoggedIn] = useState(false);
   const getData = async () => {
     try {
       const user = await JSON.parse(localStorage.getItem("user"));
       if (user && user !== undefined) {
         setUserData(user);
-        setUserLoggedIn(true)
+        setUserLoggedIn(true);
       }
     } catch (error) {
       console.log(error);
@@ -34,7 +34,7 @@ const [userLoggedIn, setUserLoggedIn] = useState(false)
 
   // const userLoggedIn = !!localStorage.getItem("user");
   return (
-    <UserContext.Provider value={{userData, userLoggedIn}}>
+    <UserContext.Provider value={{ userData, userLoggedIn }}>
       <div className="App">
         <Router>
           <div className="content">
@@ -48,7 +48,6 @@ const [userLoggedIn, setUserLoggedIn] = useState(false)
                   <Route path="/adminhome" element={<AdminHome />} />
                   <Route path="/ownerhome" element={<OwnerHome />} />
                   <Route path="/renterhome" element={<RenterHome />} />
-
                 </>
               ) : (
                 <Route path="/login" element={<Login />} />
@@ -56,9 +55,7 @@ const [userLoggedIn, setUserLoggedIn] = useState(false)
             </Routes>
           </div>
           <footer className="bg-light text-center text-lg-start">
-            <div className="text-center p-3">
-              © {date} Copyright: RentEase
-            </div>
+            <div className="text-center p-3">© {date} Copyright: RentFast</div>
           </footer>
         </Router>
       </div>
