@@ -49,5 +49,5 @@ FastRent is a full-stack house rental application designed to streamline the pro
 
 ### Clone the Repository
 ```bash
-git clone https://github.com/your-username/FastRent.git
+git clone https://github.com/shalwin04/FastRent.git
 cd FastRent
