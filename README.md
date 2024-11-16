@@ -2,6 +2,8 @@
 
 FastRent is a full-stack house rental application designed to streamline the process of renting homes. This application is built with a React-based frontend and an Express.js backend, leveraging modern web development technologies to provide a seamless experience for users.
 
+####Demo - [Demo Link](https://drive.google.com/file/d/1gGI4x7tZbHJuUblu8pQXc0yBIV7HtgS0/view?usp=sharing)
+
 ---
 
 ## Features
